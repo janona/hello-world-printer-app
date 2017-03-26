@@ -13,8 +13,8 @@ lint:
 docker_build:
 	docker build -t hello-world-printer .
 
-USERNAME=wsbtester1 
-TAG=$(USERNAME) /hello-world-printer
+USERNAME=wsbtester1
+TAG=$(USERNAME)/hello-world-printer
 docker_push:
 	docker login --username $(USERNAME) --password $(PASSWORD) ;\
 	docker tag hello-word-printer $(TAG) ;\
