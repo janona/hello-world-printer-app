@@ -17,6 +17,6 @@ USERNAME=wsbtester1
 TAG=$(USERNAME)/hello-world-printer
 docker_push:
 	docker login --username $(USERNAME) --password $(PASSWORD) ;\
-	docker tag hello-word-printer $(TAG) ;\
+	docker tag hello-world-printer $(TAG) ;\
 	docker push $(TAG) ;\
 	docker logout;
